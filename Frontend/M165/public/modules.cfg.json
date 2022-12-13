@@ -1,0 +1,19 @@
+{
+    "navbar" : [
+        {
+            "text": "OSU Search Engine",
+            "url": "localhost:3000"
+        },
+        {
+            "text": "OSU Search Engine 2",
+            "url": "localhost:3000",
+            "img": "./vite.svg"
+        }
+    ],
+    "toolbar": [
+        {
+            "text": "OSU Search Engine",
+            "url": "localhost:3000"
+        }
+    ]
+}

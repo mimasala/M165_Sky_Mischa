@@ -1,21 +1,27 @@
-import { Toolbar } from '@mui/material'
-import { useEffect, useState } from 'react'
-import './App.css'
-import Content from './components/Content'
-import Navbar from './components/Navbar'
-import { getConfigJson } from './service/ConfigHandler'
-
+import { useEffect, useState } from 'react';
+import Navbar from './components/Navbar';
+import config from './models/config';
 
 function App() {
-  const [content, setContent] = useState({})
-  const getContent = async () => {
-    await getConfigJson("home").then((response) => {
-      setContent(response)
-    })
+  const [config, setConfig] = useState<config>(); 
+
+  useEffect(() => {
+    fetch('./modules.cfg.json')
+      .then(res => {return res.json()})
+      .then((res) => {
+        console.log(res);
+        setConfig(res);
+      })
+      .catch(console.log);
+  }, []);
+  
+  if (!config) {
+    return (<div className="App"></div>)
   }
+
   return (
     <div className="App">
-      <Navbar title={'alksdjfk  '} buttons={[]} sites={[]} />
+      <Navbar config={config} />
     </div>
   )
 }
