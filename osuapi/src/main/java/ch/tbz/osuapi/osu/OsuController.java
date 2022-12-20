@@ -3,12 +3,10 @@ package ch.tbz.osuapi.osu;
 import lombok.AllArgsConstructor;
 import org.springframework.graphql.data.method.annotation.QueryMapping;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RestController;
 
-@Controller@AllArgsConstructor
+@RestController
+@AllArgsConstructor
 public class OsuController {
-    private final OsuRepository osuRepository;
-    @QueryMapping
-    Iterable<Osu> osus() {
-        return osuRepository.findAll();
-    }
+
 }
