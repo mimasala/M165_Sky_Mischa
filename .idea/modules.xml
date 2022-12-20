@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/M165.iml" filepath="$PROJECT_DIR$/.idea/M165.iml" />
+      <module fileurl="file://$PROJECT_DIR$/osuapi/osuapi.iml" filepath="$PROJECT_DIR$/osuapi/osuapi.iml" />
     </modules>
   </component>
 </project>
