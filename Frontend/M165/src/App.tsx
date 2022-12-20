@@ -4,6 +4,7 @@ import config from './models/config';
 
 function App() {
   const [config, setConfig] = useState<config>(); 
+  const [toolbarOpen, setToolbarOpen] = useState<boolean>(false);
 
   useEffect(() => {
     fetch('./modules.cfg.json')
@@ -21,7 +22,11 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar config={config} />
+      <Navbar 
+        config={config} 
+        toolbarOpen={toolbarOpen} 
+        setToolbarOpen={setToolbarOpen}
+      />
     </div>
   )
 }
