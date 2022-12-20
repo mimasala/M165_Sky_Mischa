@@ -30,5 +30,4 @@ public class OsuController {
     private ResponseEntity<Osu> createOsu(@Valid@RequestBody Osu osu){
         return ResponseEntity.ok().body(osuService.saveOsu(osu));
     }
-
 }

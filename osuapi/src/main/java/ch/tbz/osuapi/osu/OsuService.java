@@ -20,10 +20,6 @@ public class OsuService {
         this.repository = repository;
     }
 
-    public Osu osuFromJson(String json) {
-        return new Gson().fromJson(json, Osu.class);
-    }
-
     public List<Osu> getAllOsu() {
         return repository.findAll();
     }
