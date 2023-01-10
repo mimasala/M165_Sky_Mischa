@@ -1,12 +1,16 @@
-type configElement = {
+type navbarElement = {
     text: string;
     url: string;
     img?: string;
 }
+type toolbarElement = {
+    text: string
+    url: string
+}
 
 type config = {
-    navbar: configElement[];
-    toolbar: configElement[];
+    navbar: navbarElement[];
+    toolbar: toolbarElement[];
 }
 
 export default config;

@@ -2,7 +2,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import { IconButton } from "@mui/material";
 
 type props = {
-    onClick : (e : Event) => void;
+    onClick ? : (e : any) => void;
     icon ?: "Menu";
     imgSrc ?: string;
     imgAltText ?: string;
@@ -28,6 +28,7 @@ function DynamicIconButton({onClick, icon, imgSrc, imgAltText} : props) {
             color="inherit"
             aria-label="menu"
             sx={{ mr: 2 }}
+            onClick={onClick}
         >
             { content }
         </IconButton>

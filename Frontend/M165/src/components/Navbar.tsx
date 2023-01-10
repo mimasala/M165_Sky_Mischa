@@ -13,7 +13,14 @@ const Navbar = ({config, toolbarOpen, setToolbarOpen} : props) => {
     <div>
       <AppBar component="nav">
         <Toolbar>
-          <DynamicIconButton onClick={() => {setToolbarOpen(!toolbarOpen)}} icon="Menu" />
+          <DynamicIconButton onClick={() => {setToolbarOpen(!toolbarOpen)
+          console.log(toolbarOpen);
+          }} icon="Menu" />
+          {config.navbar.map((item, index) => {
+          return (
+            <DynamicIconButton key={index} imgAltText={item.text} imgSrc={item.img} />
+          )
+        })}
         </Toolbar>
       </AppBar>
     </div>

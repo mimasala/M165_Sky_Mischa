@@ -13,7 +13,7 @@
     "toolbar": [
         {
             "text": "OSU Search Engine",
-            "url": "localhost:3000"
+            "url": "https://google.com"
         }
     ]
 }
