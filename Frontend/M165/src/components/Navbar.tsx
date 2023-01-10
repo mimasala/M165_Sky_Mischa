@@ -1,6 +1,6 @@
-import MenuIcon from '@mui/icons-material/Menu';
-import { AppBar, Button, IconButton, Toolbar } from '@mui/material';
+import { AppBar, Toolbar } from '@mui/material';
 import config from '../models/config';
+import DynamicIconButton from './atoms/DynamicIconButton';
 
 type props = {
   config: config;
@@ -13,49 +13,7 @@ const Navbar = ({config, toolbarOpen, setToolbarOpen} : props) => {
     <div>
       <AppBar component="nav">
         <Toolbar>
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            sx={{ mr: 2 }}
-            onClick={() => {setToolbarOpen(!toolbarOpen)}}
-          >
-            <MenuIcon />
-          </IconButton>
-          {
-            config.navbar.map((element, index) => {
-              if (element.img) {
-                return (
-                  <IconButton
-                    key={index}
-                    size="large"
-                    edge="start"
-                    color="inherit"
-                    aria-label={element.text}
-                    style={{paddingRight: "10px"}}
-                  >
-                    <img
-                      src={element.img}
-                      alt={element.text}
-                    />
-                  </IconButton>
-                ) 
-              } else {
-                return (
-                  <Button 
-                    onClick={() => {window.location.href = element.url;}}
-                    key={index}
-                    variant="contained" 
-                    color="secondary" 
-                    style={{color: "#000000", paddingRight: "10px"}}
-                  >
-                    {element.text}
-                  </Button>
-                )
-              }
-            })
-          }
+          <DynamicIconButton onClick={() => {setToolbarOpen(!toolbarOpen)}} icon="Menu" />
         </Toolbar>
       </AppBar>
     </div>
