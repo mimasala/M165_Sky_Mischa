@@ -18,7 +18,7 @@ const Navbar = ({config, toolbarOpen, setToolbarOpen} : props) => {
           }} icon="Menu" />
           {config.navbar.map((item, index) => {
           return (
-            <DynamicIconButton key={index} imgAltText={item.text} imgSrc={item.img} />
+            <DynamicIconButton key={index} url={item.url} imgAltText={item.text} imgSrc={item.img} />
           )
         })}
         </Toolbar>

@@ -6,9 +6,10 @@ type props = {
     icon ?: "Menu";
     imgSrc ?: string;
     imgAltText ?: string;
+    url ?: string;
 }
 
-function DynamicIconButton({onClick, icon, imgSrc, imgAltText} : props) {
+function DynamicIconButton({onClick, icon, imgSrc, imgAltText, url} : props) {
     if (!icon && (!imgSrc && !imgAltText)) {
         throw new Error("Nothing to show provided")
     }
@@ -29,6 +30,7 @@ function DynamicIconButton({onClick, icon, imgSrc, imgAltText} : props) {
             aria-label="menu"
             sx={{ mr: 2 }}
             onClick={onClick}
+            href={url!}
         >
             { content }
         </IconButton>

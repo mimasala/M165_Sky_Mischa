@@ -1,8 +1,7 @@
 {
-    "navbar" : [
+    "navbar": [
         {
-            "text": "OSU Search Engine",
-            "url": "localhost:3000"
+            "text": "OSU Search Engine"
         },
         {
             "text": "OSU Search Engine 2",
@@ -14,6 +13,122 @@
         {
             "text": "OSU Search Engine",
             "url": "https://google.com"
+        }
+    ],
+    "modules":[
+        {
+            "name":"OSU",
+            "backendUrl":"https://localhost:3000/api/v1/osu",
+            "fields": [
+                {
+                    "type": "number",
+                    "name": "id"
+                },
+                {
+                    "type": "number",
+                    "name": "difficulty_ar"
+                },
+                {
+                    "type": "number",
+                    "name": "difficulty_hp"
+                },
+                {
+                    "type": "string",
+                    "name": "source"
+                },
+                {
+                    "type": "number",
+                    "name": "bpm"
+                },
+                {
+                    "type": "number",
+                    "name": "play_length"
+                },
+                {
+                    "type": "number",
+                    "name": "difficulty_od"
+                },
+                {
+                    "type": "number",
+                    "name": "beatmapset"
+                },
+                {
+                    "type": "number",
+                    "name": "favorites"
+                },
+                {
+                    "type": "number",
+                    "name": "gamemode"
+                },
+                {
+                    "type": "string",
+                    "name": "date"
+                },
+                {
+                    "type": "string",
+                    "name": "mapper"
+                },
+                {
+                    "type": "string",
+                    "name": "genre"
+                },
+                {
+                    "type": "number",
+                    "name": "difficulty"
+                },
+                {
+                    "type": "number",
+                    "name": "difficulty_cs"
+                },
+                {
+                    "type": "string",
+                    "name": "difficulty_name"
+                },
+                {
+                    "type": "number",
+                    "name": "pass_count"
+                },
+                {
+                    "type": "number",
+                    "name": "beatmap_id"
+                },
+                {
+                    "type": "string",
+                    "name": "artist"
+                },
+                {
+                    "type": "number",
+                    "name": "beatmapset_id"
+                },
+                {
+                    "type": "string",
+                    "name": "language"
+                },
+                {
+                    "type": "number",
+                    "name": "total_length"
+                },
+                {
+                    "type": "number",
+                    "name": "beatmap_status"
+                },
+                {
+                    "type": "string",
+                    "name": "title"
+                },
+                {
+                    "type": "number",
+                    "name": "map_count"
+                },
+                {
+                    "type": "number",
+                    "name": "play_count"
+                },
+                {
+                    "type": "string",
+                    "name": "ignored"
+                }
+            ]
         }
     ]
 }
