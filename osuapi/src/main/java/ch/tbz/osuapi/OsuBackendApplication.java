@@ -5,8 +5,6 @@ import lombok.AllArgsConstructor;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import java.util.Map;
-
 @SpringBootApplication@AllArgsConstructor
 public class OsuBackendApplication {
 
