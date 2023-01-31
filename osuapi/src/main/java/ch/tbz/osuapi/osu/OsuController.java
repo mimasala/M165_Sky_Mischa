@@ -29,4 +29,8 @@ public class OsuController {
     public ResponseEntity<Osu> createOsu(@Valid@RequestBody Osu osu){
         return ResponseEntity.ok().body(osuService.saveOsu(osu));
     }
+    @PostMapping("/all/")
+    public ResponseEntity<List<Osu>> createAllOsu(@Valid@RequestBody List<Osu> osu){
+        return ResponseEntity.ok().body(osuService.saveAllOsu(osu));
+    }
 }

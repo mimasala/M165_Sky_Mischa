@@ -26,4 +26,8 @@ public class OsuService {
     public Osu saveOsu(Osu osu) {
         return repository.save(osu);
     }
+
+    public List<Osu> saveAllOsu(List<Osu> osu) {
+        return repository.saveAll(osu);
+    }
 }
