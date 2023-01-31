@@ -1,4 +1,7 @@
+
 import { useEffect, useState } from 'react';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import OsuModule from './components/modules/osu';
 import StartPage from './components/pages/StartPage';
 import config from './models/config';
 
@@ -21,7 +24,16 @@ function App() {
 
   return (
     <div className="App">
-      <StartPage config={config}/>
+      <Router>
+        <Routes>
+          <Route path="/" element={<StartPage config={config}/>} />
+          {
+            config.modules.map((elem) => {
+              return <Route path={elem.name} element={<OsuModule config={config} />} />
+            })
+          }
+        </Routes>
+      </Router>
     </div>
   )
 }
