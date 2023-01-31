@@ -7,9 +7,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication@AllArgsConstructor
 public class OsuBackendApplication {
-
-	private final OsuService dataService;
-
 	public static void main(String[] args) {
 		SpringApplication.run(OsuBackendApplication.class, args);
 	}

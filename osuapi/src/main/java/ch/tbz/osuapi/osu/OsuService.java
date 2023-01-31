@@ -23,7 +23,7 @@ public class OsuService {
         return repository.findByTitle(title);
     }
 
-    public Osu saveOsu(@Valid Osu osu) {
+    public Osu saveOsu(Osu osu) {
         return repository.save(osu);
     }
 }
