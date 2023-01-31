@@ -1,6 +1,22 @@
 # M165_Sky_Mischa
 Generic data hoarding platform (Spring, Neo4J, React TS)
 
+## Idee
+In diesem Projekt wollten wir uns eine Challenge annehmen. Deshalb dachten wir, dass es interessant wäre, ein dynamisches Programm zu schreiben. Wir wollen damit generischen Code schreiben: Code, den man sehr einfach erweitern kann. Dieses Projekt wollten wir zudem auch privat später nutzen, also war die Motivation bei uns auch sehr hoch.
+Also dachten wir, in verbundenheit mit der Datenbank, wäre es sinnvoll ein Data-Hording Projekt zu machen. Dazu sollte man einfach neue Daten-Quellen hinzufügen können. 
+
+## Generigkeit
+Im Frontend gibt es ein `modules.cfg.json` File, welches die Einstellungen für das Frontend besitzt. Dafür gibt es 3 Einstellungen:
+
+1. Navbar
+Hier stehen die Links in der Navbar, die eine URL besitzen.
+
+2. Toolbar
+Die Toolbar wird verwendet, um schnell zu Modulen zu wechseln. Hier werden schnelle Navigationsitems angezeigt.
+
+3. Modules
+Hier werden die Module gelisted, welche auf der Startseite angezeigt werden. Dazu wird automatisch ein Formular generiert, welches in das Backend ein neues Item schickt und diese darzeigt und modifiziert.
+
 # Verwendete Technologien
 In diesem Projekt verwendeten wir verschiedene Technologien für das Frontend, das Backend sowie die Datenbank. Darunter findet man eine kurze Beschreibung dazu:
 
