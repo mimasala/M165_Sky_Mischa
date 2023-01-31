@@ -14,7 +14,7 @@ const OsuModule = ({config} : props) => {
                 config.modules.at(0)?.fields.map((elem) => {
                     return (
                         <div>
-                            <TextField label={elem.name} variant="outlined"></TextField>
+                            <TextField label={elem.name} variant="outlined" sx={{backgroundColor:"white"}}></TextField>
                         </div>
                     )
                 })

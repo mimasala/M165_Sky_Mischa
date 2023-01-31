@@ -13,6 +13,10 @@
         {
             "text": "OSU Search Engine",
             "url": "https://google.com"
+        },
+        {
+            "text": "OSU Search Engine",
+            "url": "https://google.com"
         }
     ],
     "modules":[
@@ -20,10 +24,6 @@
             "name":"OSU",
             "backendUrl":"https://localhost:3000/api/v1/osu",
             "fields": [
-                {
-                    "type": "number",
-                    "name": "id"
-                },
                 {
                     "type": "number",
                     "name": "difficulty_ar"
