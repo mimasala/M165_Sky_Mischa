@@ -65,3 +65,9 @@ Für das Backend braucht man IntelliJ. Dazu muss man den Ordner `/osuapi` in Int
 2. Abhängigkeiten installieren. Dies tut man mithilfe von `npm install`.
 
 3. Frontend Starten. Nachdem alles installiert wurde, kann man das Frontend mithilfe von `npm run dev` starten.
+
+# Reflexion
+In diesem Projekt konnten wir uns mit vielen neuen Technologien auseinander setzen. Darunter Neo4j, aber auch konnten wir lernen ein dynamisches Projekt zu schreiben. Dies war nicht nur sehr spannend, sonder wird von uns in der Zukunft auch gebraucht werden für private Zwecke. Nicht nur als Code Vorlage, sondern auch als Data-Hoarding Programm wird es uns später zu nutzen kommen. Denn wir haben vor, es auch einzusetzen. 
+
+## Neu Gelerntes
+Wir konnten in diesem Modul hautpsätzlich Datenbank Theorie und Praxis lernen. Darunter waren NoSQL, Neo4j und Cypher im Hauptfokus. Wir konnten am meisten durch das Aufsetzen und den Einsatz von Neo4j lernen, welches manchmal etwas Geduld und mehrere StackOverflow-Suchen brauchte. Trotzdem war es sehr spannend und es gab viele *Aha*-Momente, welche wir in der Gruppe teilten.
